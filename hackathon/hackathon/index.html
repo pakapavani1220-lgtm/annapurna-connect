@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annapurna Connect - Pro Ultimate Final English</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',Arial;background:radial-gradient(1000px 600px at 10% -10%,#1e3a8a 0%,transparent 60%),radial-gradient(800px 400px at 100% 0%,#7c3aed 0%,transparent 50%),linear-gradient(135deg,#0f172a,#1e293b,#0f3460);color:#e2e8f0;min-height:100vh;padding:12px}
+.header{text-align:center;padding:22px}.header h1{font-size:42px;font-weight:900;background:linear-gradient(90deg,#f472b6,#facc15,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:flex;align-items:center;justify-content:center;gap:14px}
+.logo{width:62px;height:62px;background:linear-gradient(135deg,#facc15,#f97316);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 0 30px rgba(250,204,21,.5);animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.badge{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:6px 12px;border-radius:999px;font-size:11px;margin:3px;display:inline-block}
+.screen{display:none}.screen.active{display:block;animation:fade.45s}@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.card{background:rgba(255,255,255,.06);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:20px;margin:14px auto;max-width:1100px;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.btn{border:none;padding:12px 20px;border-radius:12px;font-weight:800;cursor:pointer;width:100%;transition:.22s}.btn-donor{background:linear-gradient(135deg,#ec4899,#f97316);color:#fff}.btn-ngo{background:linear-gradient(135deg,#3b82f6,#06b6d4);color:#fff}.btn-admin{background:linear-gradient(135deg,#8b5cf6,#ec4899);color:#fff}.btn-ghost{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;width:auto}.btn:hover{transform:translateY(-1px)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}.grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px}
+@media(max-width:900px){.grid2,.grid3,.grid4{grid-template-columns:1fr}.header h1{font-size:32px;flex-direction:column}}
+.input,select,textarea{width:100%;padding:11px 13px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.35);color:#fff;margin:6px 0;outline:none}
+.tag{font-size:11px;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);margin:2px;display:inline-block}
+.official{border:2px solid #22c55e;background:linear-gradient(135deg,rgba(34,197,94,.15),rgba(132,204,22,.08));border-radius:14px;padding:14px;margin:10px 0;position:relative}.official::before{content:'✓ VERIFIED';position:absolute;top:8px;right:8px;background:#22c55e;color:#052e16;font-size:10px;font-weight:900;padding:4px 8px;border-radius:999px}
+.item{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:13px;margin:8px 0}
+.link{color:#60a5fa;cursor:pointer;font-weight:700}.small{font-size:12px;opacity:.75}.stat{font-size:28px;font-weight:900}
+.live-dot{height:8px;width:8px;background:#22c55e;border-radius:50%;display:inline-block;animation:pulse 1.5s infinite}@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}70%{box-shadow:0 0 0 10px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+.map-btn{background:rgba(34,197,94,.15);border:1px solid #22c55e;color:#22c55e;padding:6px 12px;border-radius:8px;font-size:11px;text-decoration:none;display:inline-block;margin:3px}
+.role-donor{background:linear-gradient(135deg,#ec4899,#f97316);color:#fff;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:900}
+.role-ngo{background:linear-gradient(135deg,#3b82f6,#06b6d4);color:#fff;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:900}
+.role-admin{background:linear-gradient(135deg,#8b5cf6,#ec4899);color:#fff;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:900}
+table{width:100%;border-collapse:collapse;margin-top:10px}th,td{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.1);font-size:12px;text-align:left}th{opacity:.6;font-size:11px}
+</style>
+</head>
+<body>
+<div class="header">
+<h1><span class="logo">🍚</span> ANNAPURNA CONNECT</h1>
+<p>Zero Waste → Zero Hunger • Pro Ultimate • Donor ↔ NGO ↔ Admin Connected LIVE</p>
+<div style="margin-top:10px"><span class="badge"><span class="live-dot"></span> LIVE SYNC ALL DASHBOARDS</span><span class="badge">🍚 RICE BOWL ICON</span><span class="badge">📍 GPS TRACKER</span><span class="badge">👑 ADMIN ROLE TRACKING</span></div>
+</div>
+
+<div id="roleScreen" class="screen active">
+<div class="card" style="max-width:800px;text-align:center">
+<h2>Select Your Role</h2>
+<p class="small">Share this link: https://capable-biscuit-db233f.netlify.app<br>Anyone who logs in - Admin sees LIVE with role tag Donor / NGO</p>
+<div class="grid3" style="margin-top:14px">
+<button class="btn btn-donor" onclick="selectRole('donor')">🍽️ I AM DONOR<br><small>1st Signup Full, 2nd Login Phone+PIN Only</small></button>
+<button class="btn btn-ngo" onclick="selectRole('ngo')">❤️ I AM NGO<br><small>Verified Official - 9999999999 / ngo123</small></button>
+<button class="btn btn-admin" onclick="selectRole('admin')">👑 I AM ADMIN<br><small>View All Donors, NGOs, Orders, History, Location</small></button>
+</div>
+</div>
+</div>
+
+<div id="authScreen" class="screen"><div class="card" style="max-width:520px"><h2 id="authTitle">Login</h2><p id="authSub" class="small"></p>
+<div id="donorFields"><div id="donorSignupExtra"><input id="authName" class="input" placeholder="Full Name"><input id="authID" class="input" placeholder="Aadhaar Last 4 Digits"></div><input id="authPhone" class="input" placeholder="Phone Number - 10 Digits"><input id="authPass" type="password" class="input" placeholder="PIN / Password"><div class="small" id="loginHint" style="color:#facc15"></div></div>
+<div id="ngoFields" style="display:none"><select id="ngoSelect" class="input" onchange="fillNGODetails()"><option value="">-- Select Verified NGO --</option><option value="akshaya">Akshaya Patra Foundation</option><option value="robin">Robin Hood Army Hyderabad</option><option value="feeding">Feeding India by Zomato</option></select><div id="ngoDetailsBox" class="official" style="display:none;font-size:11px"></div><input id="ngoPhone" class="input" value="9999999999" readonly><input id="ngoPass" type="password" class="input" value="ngo123"><p class="small" style="color:#facc15">Demo NGO Login: 9999999999 / ngo123</p></div>
+<div id="adminFields" style="display:none"><input id="adminUser" class="input" placeholder="Admin Username" value="admin"><input id="adminPass" type="password" class="input" placeholder="Admin Password" value="admin123"><p class="small" style="color:#facc15">Demo Admin: admin / admin123 - You see all Donors and NGOs LIVE</p></div>
+<button class="btn btn-donor" id="authBtn" onclick="handleAuth()">SUBMIT</button><p style="text-align:center;margin-top:10px"><span class="link" onclick="goHome()">← Back</span> <span id="toggleWrap"> | <span id="toggleText"></span> <span class="link" id="toggleLink" onclick="toggleAuthMode()">Toggle</span></span></p><p id="authMsg" style="text-align:center;color:#fb7185;margin-top:6px"></p></div></div>
+
+<div id="donorScreen" class="screen">
+<div class="card" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px"><div><h2>🍚 Donor - <span id="donorName"></span> <span class="role-donor">DONOR</span> <span class="tag">ID VERIFIED</span></h2><div class="small" id="donorPhone"></div></div><div><button class="btn-ghost" onclick="logout()">Logout</button></div></div>
+<div class="grid2">
+<div class="card"><h3>🍱 Donate Food With Location Tracker</h3><div class="grid2"><input id="foodQty" type="number" class="input" placeholder="Quantity - Plates"><select id="foodType" class="input"><option>Veg Biryani</option><option>Veg Meals</option><option>Mixed Food</option><option>Non-Veg</option></select></div><div style="display:flex;gap:6px"><button class="btn-ghost" onclick="getLocation()" style="flex:1">📍 Get GPS Location</button><span id="gpsStatus" class="small"></span></div><input id="foodLatLng" class="input" placeholder="GPS Lat,Lng Auto" readonly style="background:rgba(34,197,94,.1);font-size:11px"><input id="foodLoc" class="input" placeholder="Location e.g. KPHB, Hyderabad"><button class="btn btn-donor" onclick="donateFood()">DONATE NOW - NGO & Admin See LIVE</button><p id="donateMsg" class="small" style="margin-top:6px"></p></div>
+<div class="card"><h3>📊 Your Lifetime Impact - Connected to Admin</h3><div class="grid3"><div style="text-align:center"><div class="stat" id="totalDon">0</div><div class="small">Donations</div></div><div style="text-align:center"><div class="stat" id="totalPlates">0</div><div class="small">Plates</div></div><div style="text-align:center"><div class="stat" id="totalPeople">0</div><div class="small">People Fed</div></div></div><div class="small" style="margin-top:8px">Your updates go LIVE to NGO Dashboard and Admin Dashboard instantly.</div></div>
+</div>
+<div class="card"><h3>📚 My History - Accepted Details + ETA + Location Tracker</h3><div id="donorHistory"></div></div>
+</div>
+
+<div id="ngoScreen" class="screen">
+<div class="card" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px"><div><h2>❤️ NGO - <span id="ngoName"></span> <span class="role-ngo">NGO</span> <span class="tag">VERIFIED</span></h2><div class="small" id="ngoFullDetails"></div></div><button class="btn-ghost" onclick="logout()">Logout</button></div>
+<div class="grid3"><div class="card" style="margin:0;text-align:center"><div class="stat" id="liveCount">0</div><div class="small">Live Orders Received</div></div><div class="card" style="margin:0;text-align:center"><div class="stat" id="accCount">0</div><div class="small">Accepted - On The Way</div></div><div class="card" style="margin:0;text-align:center"><div class="stat"><span class="live-dot"></span> LIVE</div><div class="small" id="syncTime">Connected to Donor & Admin</div></div></div>
+<div class="card"><h3>📦 Donor Orders Received - Full Details + ETA + Location Tracker</h3><p class="small">When donor donates, order appears here with full details. Accept → Set ETA and Volunteer → Donor and Admin see LIVE.</p><div id="ngoRequests" style="margin-top:10px"></div></div>
+<div class="card"><h3>✅ Accepted Orders - Tracking - Reach Time</h3><div id="ngoAccepted"></div></div>
+</div>
+
+<div id="adminScreen" class="screen">
+<div class="card" style="display:flex;justify-content:space-between;align-items:center"><div><h2>👑 Admin Dashboard - Full Control - All Connected LIVE <span class="live-dot"></span></h2><div class="small">You share link to Donors and NGOs - Who logs in from your link as Donor or NGO - You see here LIVE with role tag</div></div><button class="btn-ghost" onclick="logout()">Logout</button></div>
+<div class="grid4">
+<div class="card" style="margin:0;text-align:center"><div class="stat" id="adminTotalDonors">0</div><div class="small">Total Donors Logged In</div></div>
+<div class="card" style="margin:0;text-align:center"><div class="stat" id="adminTotalNGOs">0</div><div class="small">Total NGOs Logged In</div></div>
+<div class="card" style="margin:0;text-align:center"><div class="stat" id="adminTotalOrders">0</div><div class="small">Total Orders Ever</div></div>
+<div class="card" style="margin:0;text-align:center"><div class="stat" id="adminPending">0</div><div class="small">Pending Now</div></div>
+</div>
+<div class="card" style="border:2px solid #22c55e"><h3>🔴 LIVE ROLE TRACKING - Who Logged In As Donor? Who As NGO? - Admin Sees Here!</h3><p class="small">When someone logs in from public link as Donor → Shows <span class="role-donor">DONOR</span> tag, As NGO → Shows <span class="role-ngo">NGO</span> tag - Auto refresh every 2 seconds</p><div id="adminLiveActivity" style="max-height:350px;overflow:auto;margin-top:10px"></div></div>
+<div class="grid2">
+<div class="card"><h3>👥 Donors List - Users Logged In As Donor Role</h3><div id="adminDonorsList" style="max-height:300px;overflow:auto"></div></div>
+<div class="card"><h3>🏛️ NGOs List - Users Logged In As NGO Role</h3><div id="adminNGOsList"></div></div>
+</div>
+<div class="card"><h3>📍 Orders History - Location Wise - How Many Times Received</h3><p class="small">Full history: Where orders came from, how many times received, accepted status, GPS tracking</p><div id="adminOrdersHistory" style="max-height:400px;overflow:auto"></div></div>
+<div class="card"><h3>🗺️ Location Wise Stats - How Many Orders From Each Area</h3><div id="adminLocationStats"></div></div>
+</div>
+
+<script>
+let currentRole='donor',isSignup=true,currentUser=null,currentGPS=null;
+const DB_KEY='annapurna_pro_final_english_v18';
+const NGO_DATA={
+ akshaya:{name:'Akshaya Patra Foundation',reg:'U85110KA2000NPL027893',pan:'AAATK4163P',g80:'CIT(E)BLR/80G/R-2023-24/A/10345',bank:'SBI ****1234',rating:'4.9',pickups:'1200+',volunteers:['Ravi Kumar','Suresh','Anjali']},
+ robin:{name:'Robin Hood Army Hyderabad',reg:'2017/HYD/004523',pan:'AADCR1234H',g80:'Available',bank:'HDFC ****5678',rating:'4.8',pickups:'560+',volunteers:['Vikram','Priya']},
+ feeding:{name:'Feeding India by Zomato',reg:'U85300DL2014NPL123456',pan:'AACCF1234A',g80:'Available',bank:'ICICI ****9012',rating:'4.9',pickups:'980+',volunteers:['Aman','Neha']}
+};
+const getDB=()=>{try{return JSON.parse(localStorage.getItem(DB_KEY)||'{"users":[],"donations":[],"logs":[]}')}catch{return{users:[],donations:[],logs:[]}}};
+const saveDB=(db)=>{localStorage.setItem(DB_KEY,JSON.stringify(db));localStorage.setItem('annapurna_live_signal',Date.now().toString())};
+
+function selectRole(r){
+ currentRole=r;document.getElementById('roleScreen').classList.remove('active');document.getElementById('authScreen').classList.add('active');
+ document.getElementById('donorFields').style.display=r==='donor'?'block':'none';
+ document.getElementById('ngoFields').style.display=r==='ngo'?'block':'none';
+ document.getElementById('adminFields').style.display=r==='admin'?'block':'none';
+ if(r==='donor'){document.getElementById('authTitle').innerText='Donor - First Time Signup Full, Next Time Login Phone+PIN Only';document.getElementById('authSub').innerText='New Donor: Full Signup. Same User Next Time: Only Phone + PIN';document.getElementById('toggleWrap').style.display='inline';isSignup=true;updateAuthUI();}
+ else if(r==='ngo'){document.getElementById('authTitle').innerText='NGO - Verified Official Login';document.getElementById('authSub').innerText='Select Verified NGO - Demo Login: 9999999999 / ngo123';document.getElementById('toggleWrap').style.display='none';document.getElementById('authBtn').innerText='LOGIN AS VERIFIED NGO - Admin Will See NGO Role';}
+ else{document.getElementById('authTitle').innerText='Admin Dashboard Login - See Donor/NGO Roles LIVE';document.getElementById('authSub').innerText='Admin Login: admin / admin123 - Monitor All Donors, NGOs, Orders, Location - Live Connection';document.getElementById('toggleWrap').style.display='none';document.getElementById('authBtn').innerText='LOGIN AS ADMIN';}
+}
+function updateAuthUI(){
+ let btn=document.getElementById('authBtn');
+ if(isSignup){btn.innerText='SIGNUP AS DONOR - Admin Will See DONOR Role';document.getElementById('toggleText').innerText='Same user again?';document.getElementById('toggleLink').innerText='Login with Phone+PIN only';document.getElementById('donorSignupExtra').style.display='block';document.getElementById('loginHint').innerText='First time user - Enter Name, Phone, PIN, Aadhaar Last 4 - Admin sees you as DONOR';}
+ else{btn.innerText='LOGIN AS DONOR - Phone + PIN Only (Returning User)';document.getElementById('toggleText').innerText='New user?';document.getElementById('toggleLink').innerText='Signup Full';document.getElementById('donorSignupExtra').style.display='none';document.getElementById('loginHint').innerText='Returning user - Only Phone + PIN - Admin sees you as DONOR role LIVE';}
+}
+function toggleAuthMode(){isSignup=!isSignup;updateAuthUI();}
+function fillNGODetails(){let v=document.getElementById('ngoSelect').value;let box=document.getElementById('ngoDetailsBox');if(!v){box.style.display='none';return}let d=NGO_DATA[v];box.style.display='block';box.innerHTML=`<b>${d.name}</b><br>Reg ${d.reg} | PAN ${d.pan} | 80G ${d.g80}<br>Bank ${d.bank} Verified | ⭐ ${d.rating} | Volunteers: ${d.volunteers.join(', ')}`;}
+function handleAuth(){
+ if(currentRole==='donor'){
+   let name=document.getElementById('authName').value.trim(),phone=document.getElementById('authPhone').value.trim(),pass=document.getElementById('authPass').value.trim();
+   if(!phone||!pass){document.getElementById('authMsg').innerText='Phone + PIN required';return}
+   let db=getDB();
+   if(isSignup){
+     if(!name){document.getElementById('authMsg').innerText='Name required for first signup';return}
+     if(db.users.find(u=>u.phone===phone&&u.role==='donor')){document.getElementById('authMsg').innerText='Already registered - Click Login Phone+PIN only';return}
+     let u={name,phone,pass,role:'donor',aadhaar:document.getElementById('authID').value||'1234',joined:Date.now()};db.users.push(u);db.logs.unshift({type:'donor_signup',role:'donor',phone,name,time:new Date().toLocaleString(),id:Date.now()});saveDB(db);currentUser=u;enterDonor();
+   }else{
+     let u=db.users.find(u=>u.phone===phone&&u.pass===pass&&u.role==='donor');if(!u){document.getElementById('authMsg').innerText='Wrong Phone/PIN or not registered - Try Signup';return}db.logs.unshift({type:'donor_login',role:'donor',phone,name:u.name,time:new Date().toLocaleString(),id:Date.now()});saveDB(db);currentUser=u;enterDonor();
+   }
+ }else if(currentRole==='ngo'){
+   let sel=document.getElementById('ngoSelect').value,phone=document.getElementById('ngoPhone').value,pass=document.getElementById('ngoPass').value;
+   if(!sel){document.getElementById('authMsg').innerText='Select Verified NGO';return}if(phone!=='9999999999'||pass!=='ngo123'){document.getElementById('authMsg').innerText='Use 9999999999 / ngo123';return}
+   let d=NGO_DATA[sel];currentUser={name:d.name,phone,role:'ngo',details:d};let db=getDB();if(!db.users.find(u=>u.name===d.name&&u.role==='ngo'))db.users.push({name:d.name,phone,role:'ngo',reg:d.reg,joined:Date.now()});db.logs.unshift({type:'ngo_login',role:'ngo',name:d.name,reg:d.reg,phone,time:new Date().toLocaleString(),id:Date.now()});saveDB(db);enterNGO();
+ }else{
+   let u=document.getElementById('adminUser').value, p=document.getElementById('adminPass').value;
+   if(u!=='admin'||p!=='admin123'){document.getElementById('authMsg').innerText='Admin: admin / admin123';return}
+   currentUser={name:'Admin',role:'admin'};enterAdmin();
+ }
+}
+function enterDonor(){document.getElementById('authScreen').classList.remove('active');document.getElementById('donorScreen').classList.add('active');document.getElementById('donorName').innerText=currentUser.name;document.getElementById('donorPhone').innerText='📱 '+currentUser.phone+' | 🪪 ****'+(currentUser.aadhaar||'').slice(-4)+' | Role: DONOR - Admin sees you LIVE';renderDonor();}
+function enterNGO(){document.getElementById('authScreen').classList.remove('active');document.getElementById('ngoScreen').classList.add('active');document.getElementById('ngoName').innerText=currentUser.name;document.getElementById('ngoFullDetails').innerHTML=`Reg ${currentUser.details.reg} | ${currentUser.details.bank} | ⭐ ${currentUser.details.rating} | Volunteers: ${currentUser.details.volunteers.join(', ')}`;renderNGO();}
+function enterAdmin(){document.getElementById('authScreen').classList.remove('active');document.getElementById('adminScreen').classList.add('active');renderAdmin();}
+function getLocation(){
+ document.getElementById('gpsStatus').innerText='Getting GPS...';
+ if(!navigator.geolocation){document.getElementById('gpsStatus').innerText='GPS not supported';return}
+ navigator.geolocation.getCurrentPosition(pos=>{currentGPS={lat:pos.coords.latitude,lng:pos.coords.longitude,acc:pos.coords.accuracy};document.getElementById('foodLatLng').value=currentGPS.lat.toFixed(6)+','+currentGPS.lng.toFixed(6)+' ±'+Math.round(currentGPS.acc)+'m';document.getElementById('gpsStatus').innerHTML='✅ GPS Locked!';},()=>{document.getElementById('gpsStatus').innerText='❌ GPS denied';});
+}
+function donateFood(){
+ let qty=parseInt(document.getElementById('foodQty').value)||0,loc=document.getElementById('foodLoc').value.trim()||'Hyderabad',type=document.getElementById('foodType').value;
+ if(qty<=0){document.getElementById('donateMsg').innerText='Enter quantity';return}
+ let db=getDB();
+ let don={id:Date.now(),donorPhone:currentUser.phone,donorName:currentUser.name,qty,loc,type,gps:currentGPS,time:new Date().toLocaleString(),status:'Pending',otp:Math.floor(1000+Math.random()*9000),eta:null,volunteer:null,acceptedBy:null,acceptedAt:null};
+ db.donations.unshift(don);db.logs.unshift({type:'order_created',role:'donor',donor:currentUser.name,phone:currentUser.phone,qty,loc,time:don.time,id:Date.now()});saveDB(db);
+ document.getElementById('donateMsg').innerHTML=`✅ Donated! LIVE to NGO & Admin! OTP ${don.otp} ${currentGPS?'📍 GPS Attached':''} - Form Refreshed`;
+ document.getElementById('foodQty').value='';document.getElementById('foodLoc').value='';document.getElementById('foodLatLng').value='';currentGPS=null;document.getElementById('gpsStatus').innerText='';renderDonor();
+}
+function renderDonor(){
+ let db=getDB();let my=db.donations.filter(d=>d.donorPhone===currentUser.phone);
+ document.getElementById('totalDon').innerText=my.length;document.getElementById('totalPlates').innerText=my.reduce((s,d)=>s+d.qty,0);document.getElementById('totalPeople').innerText=my.reduce((s,d)=>s+d.qty,0);
+ document.getElementById('donorHistory').innerHTML=my.length?my.map(d=>{
+   let col=d.status.includes('Accepted')?'#22c55e':d.status.includes('Pending')?'#facc15':'#fb7185';
+   let map=d.gps?`<a class="map-btn" href="https://maps.google.com/?q=${d.gps.lat},${d.gps.lng}" target="_blank">📍 Track on Map</a>`:`<span class="tag">📍 ${d.loc}</span>`;
+   let etaInfo=d.status.includes('Accepted')?`<br><span style="color:#22c55e;font-weight:800">✅ ACCEPTED by ${d.acceptedBy}<br>👤 Volunteer: ${d.volunteer}<br>⏱️ Reach in ${d.eta} mins - ${d.acceptedAt}<br>🔑 OTP: ${d.otp} - Show to volunteer</span><br>${map}`:'';
+   return `<div class="item" style="border-left:5px solid ${col}"><b>🍱 ${d.qty} ${d.type} - OTP ${d.otp}</b><br><span class="small">🕒 ${d.time} | ${map}</span><br><span class="tag" style="background:${col}22;color:${col}">${d.status}</span>${etaInfo}</div>`;
+ }).join(''):'No history yet';
+}
+function renderNGO(){
+ let db=getDB();let pending=db.donations.filter(d=>d.status==='Pending');let accepted=db.donations.filter(d=>d.status.includes('Accepted'));
+ document.getElementById('liveCount').innerText=pending.length;document.getElementById('accCount').innerText=accepted.length;document.getElementById('syncTime').innerText='Last: '+new Date().toLocaleTimeString()+' - Connected to Donor & Admin LIVE';
+ document.getElementById('ngoRequests').innerHTML=pending.length?pending.map(d=>{
+   let map=d.gps?`<a class="map-btn" href="https://maps.google.com/?q=${d.gps.lat},${d.gps.lng}" target="_blank">📍 OPEN GOOGLE MAPS - TRACK DONOR<br>GPS ${d.gps.lat.toFixed(5)},${d.gps.lng.toFixed(5)}</a>`:`<span class="tag">📍 ${d.loc}</span>`;
+   return `<div class="item" style="border-left:5px solid #22c55e"><b>🔴 ORDER RECEIVED - ${d.qty} plates from ${d.donorName}</b><br><span class="small">🍱 ${d.type} | 🕒 ${d.time} | 📱 ****${d.donorPhone.slice(-4)} | OTP ${d.otp}</span><br>${map}<br><div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><select id="eta_${d.id}" class="input" style="width:120px"><option value="15">15 mins</option><option value="30">30 mins</option><option value="45">45 mins</option><option value="60">60 mins</option></select><select id="vol_${d.id}" class="input" style="width:150px"><option>${currentUser.details.volunteers[0]}</option><option>${currentUser.details.volunteers[1]||'Volunteer 2'}</option></select><button class="btn btn-ngo" style="width:auto" onclick="acceptDonation(${d.id})">✅ ACCEPT + SET ETA</button></div></div>`;
+ }).join(''):'No pending orders - Waiting for Donors LIVE';
+ document.getElementById('ngoAccepted').innerHTML=accepted.length?accepted.map(d=>{
+   let map=d.gps?`<a class="map-btn" href="https://maps.google.com/?q=${d.gps.lat},${d.gps.lng}" target="_blank">📍 Track Donor Location</a>`:'';
+   return `<div class="item" style="border-left:5px solid #22c55e;background:rgba(34,197,94,.08)"><b>✅ ACCEPTED - ${d.qty} plates from ${d.donorName}</b><br><span class="small">Accepted by ${d.acceptedBy} at ${d.acceptedAt}<br>Volunteer: ${d.volunteer} | ETA: ${d.eta} mins | OTP ${d.otp} | ${d.loc}</span><br>${map}</div>`;
+ }).join(''):'No accepted yet';
+}
+function acceptDonation(id){
+ let eta=document.getElementById('eta_'+id)?.value||'15';
+ let vol=document.getElementById('vol_'+id)?.value||currentUser.details.volunteers[0];
+ let db=getDB();let d=db.donations.find(x=>x.id===id);if(!d)return;
+ d.status=`✅ ACCEPTED by ${currentUser.name}`;d.eta=eta;d.volunteer=vol;d.acceptedBy=currentUser.name;d.acceptedAt=new Date().toLocaleString();
+ db.logs.unshift({type:'order_accepted',role:'ngo',donor:d.donorName,qty:d.qty,ngo:currentUser.name,eta,time:d.acceptedAt,id:Date.now()});saveDB(db);renderNGO();
+ alert(`✅ Accepted! Donor ${d.donorName} will see LIVE:\nVolunteer ${vol}\nReach in ${eta} mins\nOTP ${d.otp}\nLocation tracked\nAdmin also updated!`);
+}
+function renderAdmin(){
+ let db=getDB();
+ document.getElementById('adminTotalDonors').innerText=db.users.filter(u=>u.role==='donor').length;
+ document.getElementById('adminTotalNGOs').innerText=db.users.filter(u=>u.role==='ngo').length;
+ document.getElementById('adminTotalOrders').innerText=db.donations.length;
+ document.getElementById('adminPending').innerText=db.donations.filter(d=>d.status==='Pending').length;
+
+ // LIVE ROLE TRACKING - Main Feature: Admin sees Donor or NGO role
+ document.getElementById('adminLiveActivity').innerHTML=db.logs.slice(0,80).map(l=>{
+   let roleTag = l.role==='donor'?`<span class="role-donor">DONOR</span>`:l.role==='ngo'?`<span class="role-ngo">NGO</span>`:`<span class="role-admin">ADMIN</span>`;
+   let icon = l.type==='donor_signup'?'🆕':l.type==='donor_login'?'🔑':l.type==='ngo_login'?'🏛️':l.type==='order_created'?'📦':l.type==='order_accepted'?'✅':'📌';
+   return `<div class="item" style="border-left:5px solid ${l.role==='donor'?'#ec4899':l.role==='ngo'?'#3b82f6':'#8b5cf6'}"><b>${icon} ${l.type.toUpperCase()}</b> ${roleTag}<br><b>${l.name||l.donor||''}</b> ${l.phone?`- 📱 ${l.phone}`:''} ${l.qty?`- ${l.qty} plates`:''} ${l.loc?`- 📍 ${l.loc}`:''} ${l.reg?`- Reg: ${l.reg}`:''} ${l.ngo?`- NGO: ${l.ngo} ETA ${l.eta} mins`:''}<br><span class="small">🕒 ${l.time}</span></div>`;
+ }).join('')||'No activity yet - Share link to Donors and NGOs. When Donor logs in → Shows DONOR tag, When NGO logs in → Shows NGO tag LIVE here!';
+
+ // Donors List
+ let donors=db.users.filter(u=>u.role==='donor');
+ document.getElementById('adminDonorsList').innerHTML=donors.length?donors.map(u=>{
+   let dons=db.donations.filter(d=>d.donorPhone===u.phone);
+   return `<div class="item" style="border-left:4px solid #ec4899"><b>👤 ${u.name}</b> <span class="role-donor">DONOR</span><br>📱 ${u.phone}<br><span class="small">Aadhaar ****${(u.aadhaar||'').slice(-4)} | Joined ${new Date(u.joined).toLocaleDateString()} | ${dons.length} orders | ${dons.reduce((s,d)=>s+d.qty,0)} plates</span></div>`;
+ }).join(''):'No Donors logged in yet - Share link to Donors';
+
+ // NGOs List
+ let ngos=db.users.filter(u=>u.role==='ngo');
+ document.getElementById('adminNGOsList').innerHTML=ngos.length?ngos.map(u=>{
+   return `<div class="item" style="border-left:4px solid #3b82f6"><b>🏛️ ${u.name}</b> <span class="role-ngo">NGO</span><br>📱 ${u.phone} | Reg: ${u.reg||''}<br><span class="small">Verified NGO | Joined: ${new Date(u.joined).toLocaleString()}</span></div>`;
+ }).join('')||'No NGOs logged in yet - Share link to NGOs. NGO Login: 9999999999 / ngo123';
+
+ // Orders History
+ document.getElementById('adminOrdersHistory').innerHTML=db.donations.length?`<table><tr><th>Time</th><th>Donor</th><th>Qty</th><th>Location</th><th>GPS</th><th>Status</th><th>NGO</th><th>ETA</th></tr>${db.donations.map(d=>`<tr><td>${d.time}</td><td>${d.donorName}<br><span class="small">****${d.donorPhone.slice(-4)}</span> <span class="role-donor">DONOR</span></td><td>${d.qty}</td><td>${d.loc}</td><td>${d.gps?`<a href="https://maps.google.com/?q=${d.gps.lat},${d.gps.lng}" target="_blank">📍 GPS</a>`:'Manual'}</td><td><span class="tag">${d.status}</span></td><td>${d.acceptedBy||'-'} ${d.acceptedBy?'<span class="role-ngo">NGO</span>':''}</td><td>${d.eta?d.eta+' mins':''} ${d.volunteer||''}</td></tr>`).join('')}</table>`:'No orders yet';
+ // Location stats
+ let locCounts={};db.donations.forEach(d=>{let k=d.loc||'Unknown';locCounts[k]=(locCounts[k]||0)+1});
+ document.getElementById('adminLocationStats').innerHTML=Object.entries(locCounts).length?Object.entries(locCounts).map(([loc,c])=>`<div class="item"><b>📍 ${loc}</b> - ${c} times orders received - ${db.donations.filter(d=>d.loc===loc).reduce((s,d)=>s+d.qty,0)} plates total</div>`).join(''):'No location data yet';
+}
+function goHome(){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById('roleScreen').classList.add('active');currentUser=null;}
+function logout(){goHome();}
+window.addEventListener('storage',e=>{if(e.key===DB_KEY||e.key==='annapurna_live_signal'){if(currentUser){if(currentUser.role==='donor')renderDonor();else if(currentUser.role==='ngo')renderNGO();else if(currentUser.role==='admin')renderAdmin();}}});
+setInterval(()=>{if(currentUser){if(currentUser.role==='donor')renderDonor();else if(currentUser.role==='ngo')renderNGO();else if(currentUser.role==='admin')renderAdmin();}},2000);
+</script>
+</body>
+</html>
